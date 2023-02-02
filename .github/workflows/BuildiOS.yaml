@@ -77,5 +77,8 @@ jobs:
       - name: Install .NET Workloads
         run: dotnet workload install maui-ios
 
-      - name: Build
-        run: dotnet build -c release osu.iOS
+      - name: Build in Dotnet
+        run: dotnet build -c Release osu.iOS 
+
+      - name: Build with Msbuild
+        run: /Library/Frameworks/Mono.framework/Commands/msbuild osu.iOS.slnf /p:Configuration=Ad-Hoc /p:Platform=iPhone /p:BuildIpa=true
