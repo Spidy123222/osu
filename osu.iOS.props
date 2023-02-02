@@ -9,6 +9,10 @@
          so there's nothing to be worried about. -->
     <NoWarn>$(NoWarn);MT7091</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>false</IpaIncludeArtwork>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'iPhone'">
     <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
   </PropertyGroup>
